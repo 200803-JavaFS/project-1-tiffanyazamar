@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Avenger Application</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="./main.css" />
+
+</head>
+<body>
+	<div class="container" id="fullcontainer">
+		<div class="center" id="spinner-row" style="display: none">
+			<div class="spinner-border text-primary ">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+		<div class="center" id="login-row">
+			<div class="card">
+				<h5 class="card-header">Sign In:</h5>
+				<div class="card-body">
+					<input class="col-sm-4 form-control" id="username" type="text"
+						placeholder="USERNAME" /> <input class="col-sm-4 form-control"
+						id="password" type="password" placeholder="PASSWORD" />
+					<button id="loginbtn" class="btn login-button">Login</button>
+					<div>
+						<span style="color: red" id="login-message"></span>
+					</div>
+				</div>
+			</div>
+
+
+
+			<h3 class="col-lg-12"></h3>
+
+		</div>
+
+		<div id="welcome-message" >
+				<span id="logout" style = "text-align: right;    float: right;"></span>
+		</div>
+
+		<br /> <br />
+		<div id="page-body" style="display: none">
+			<div>
+				<span id="message"></span>
+			</div>
+			<div class="row" id="table-wrapper">
+				<div>
+					<label class="label" for="supName">Filter item by: </label> <select
+						id="supName" onchange="filterReimbursement(this)"
+						class="form-control">
+						<option value="All">All</option>
+						<option value="Approved">Approved</option>
+						<option value="Denied">Denied</option>
+						<option value="Pending">Pending</option>
+					</select>
+				</div>
+				<table class="table table-hover table-sm" id="avtable">
+					<thead>
+						<tr class="table-header">
+							<th>ID</th>
+							<th>Amount</th>
+							<th>Type</th>
+							<th>Description</th>
+							<th>Status</th>
+							<th>Author</th>
+							<th>Submitted Date</th>
+							<th>Resolver</th>
+							<th>Resolved Date</th>
+							<th>Action</th>
+
+						</tr>
+					</thead>
+					<tbody id="avbody"></tbody>
+				</table>
+			</div>
+
+			<br /> <br />
+			<div>
+				<button class="btn btn-success" id="new-reimbursement-button"
+					onClick="showAddButton()" style="display: block">New
+					Reimbursement</button>
+			</div>
+
+
+
+			<div class="card" id="new-reimbursement" style="display: none">
+				<h5 class="card-header">Add new reimbursement:</h5>
+				<div class="card-body">
+
+
+					<div class="row" id="formdiv">
+						<div class="col-4-sm">
+							<label class="label" for="supName">Type</label> <select
+								name="cars" id="type" class="form-control">
+								<option value="Lodging">Lodging</option>
+								<option value="Travel">Travel</option>
+								<option value="Food">Food</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+						<div class="col-4-sm">
+							<label class="label" for="supPower">Amount ($)</label> <input
+								type="number" class="form-control" id="amount" />
+						</div>
+						<div class="col-4-sm">
+							<label class="label" for="fName">Description</label>
+							<textarea class="form-control" id="description"></textarea>
+						</div>
+					</div>
+						<button class="btn btn-success" onClick="AddFunc()">Add</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="main.js"></script>
+</body>
+</html>

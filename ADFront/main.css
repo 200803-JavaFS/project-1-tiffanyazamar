@@ -1,0 +1,47 @@
+body {
+  background-image: url('images/bg_abstract2.jpg');
+}
+
+.center {
+  text-align: -webkit-center;
+ color: #e2348b;
+     padding-top: 200px;
+
+}
+
+.login-button{
+	background-color: #ea6bb8;
+}
+
+.card{
+	    background-color: #ff6ebe40;
+    border: none;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.table-header{
+	    background-color: #f657f952;
+}
+.row-approved{
+	background-color: #c3e6cb6b;
+}
+.row-denied{
+	    background-color: #ff8f8f6b;
+}
+.row-pending{
+	    background-color: #feffaa6b;
+}
+
+.row{
+	max-height: 400px;
+    overflow-y: auto;
+}
+
+html {
+  font-family: verdana;
+  font-size: 10pt;
+  line-height: 25px;
+}
+
+
