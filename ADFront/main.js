@@ -47,6 +47,9 @@ async function loginFunc() {
     
     document.getElementById("page-body").style.display = "block";
 
+    if(loggedInUser.userRole.roleName==='Finance Manager'){
+    	document.getElementById("new-user-button").style.display = "block"
+    };
     findAllFunc('All');
   } else {
 	  document.getElementById("login-row").style.display = "block";
@@ -59,6 +62,10 @@ function showAddButton(){
 	document.getElementById("new-reimbursement").style.display = "block";
 	document.getElementById("new-reimbursement-button").style.display = "none";
 
+}
+function showAddNewUserButton(){
+	document.getElementById("new-user").style.display = "block";
+	document.getElementById("new-user-button").style.display = "none";
 }
 async function findAllFunc(status) {
   document.getElementById("avbody").innerText = "";
@@ -232,6 +239,51 @@ async function AddFunc() {
       "Failed to add new reimbursement";
   }
 }
+async function addNewUser() {
+	  let username = document.getElementById("new-username").value;
+	  let password = document.getElementById("new-password").value;
+	  let role = document.getElementById("new-role").value;
+	  let email = document.getElementById("new-email").value;
+	  let firstname = document.getElementById("new-firstName").value;
+	  let lastname = document.getElementById("new-lastName").value;
+
+	  let user = {
+		username: username,
+		password: password,
+		role: role,
+		email: email,
+		firstname: firstname,
+		lastname: lastname
+	  };
+
+	  console.log(user);
+
+	  let resp = await fetch(url + "user", {
+	    method: "POST",
+	    body: JSON.stringify(user),
+	    credentials: "include",
+	  });
+
+	  if (resp.status === 201) {
+		  document.getElementById("message").innerText =
+		      "Successfully created a new User.";
+		  
+		  document.getElementById("new-user").style.display = "none";
+			document.getElementById("new-user-button").style.display = "block";
+
+		  document.getElementById("password").value="";
+		  document.getElementById("username").value="";
+		  document.getElementById("role").value = "";
+		  document.getElementById("email").value = "";
+		  document.getElementById("firstName").value = "";
+		  document.getElementById("lastName").value = "";
+
+	  } else {
+	    document.getElementById("message").innerText =
+	      "Failed to add new user";
+	  }
+	}
+
 
 async function approveReimbursement(id) {
 

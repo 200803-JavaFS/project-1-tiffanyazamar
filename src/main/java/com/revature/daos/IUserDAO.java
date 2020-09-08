@@ -6,7 +6,7 @@ public interface IUserDAO {
 
 	User findByUsernameAndPassword(String username, String password);
 
-	User insert(User user);
+	boolean insert(User user);
 
 	User findById(int authorId);
 }

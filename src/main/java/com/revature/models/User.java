@@ -37,6 +37,20 @@ public class User implements Serializable {
 	@JoinColumn(name = "user_role_id", referencedColumnName = "id")
 	private UserRole userRole;
 
+	public User() {
+		super();
+	}
+
+	public User(String password, String username, String firstName, String lastName, String email, UserRole userRole) {
+		super();
+		this.password = password;
+		this.username = username;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.userRole = userRole;
+	}
+
 	public int getId() {
 		return id;
 	}

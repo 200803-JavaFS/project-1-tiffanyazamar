@@ -1,0 +1,70 @@
+2020-09-07 21:50:59 INFO  LoginService:45 - admin is logged in.
+2020-09-07 21:50:59 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 21:59:48 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:00:03 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:00:26 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:05:44 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:07:22 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:07:22 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:07:52 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:07:52 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:31:15 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:31:20 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:32:59 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:33:00 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:34:14 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:34:16 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:34:40 ERROR UserDAO:43 - Failed to insert new user. Rolling back now.
+2020-09-07 22:34:40 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:37:46 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:37:47 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:38:16 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:44:00 INFO  LoginService:45 - tiffany is logged in.
+2020-09-07 22:44:00 INFO  ReimbursementService:81 - Select all reimbursement for user 1
+2020-09-07 22:44:10 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:44:10 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:45:20 INFO  LoginService:45 - tiffany is logged in.
+2020-09-07 22:45:20 INFO  ReimbursementService:81 - Select all reimbursement for user 1
+2020-09-07 22:46:00 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:46:02 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:46:15 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:46:29 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:47:08 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:47:09 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:48:43 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:48:45 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:52:04 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:52:04 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:55:32 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:55:36 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:56:38 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:56:38 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:57:22 INFO  LoginService:45 - admin is logged in.
+2020-09-07 22:57:24 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 22:57:57 INFO  ReimbursementService:76 - A new reimbursement was created by admin
+2020-09-07 22:57:57 INFO  ReimbursementService:33 - Select all reimbursement
+2020-09-07 23:01:10 INFO  LoginService:45 - eunice is logged in.
+2020-09-07 23:01:10 INFO  ReimbursementService:36 - Select all reimbursement with status ALL
+2020-09-07 23:01:10 INFO  ReimbursementService:36 - Select all reimbursement with status Approved
+2020-09-07 23:01:10 INFO  ReimbursementService:36 - Select all reimbursement with status Denied
+2020-09-07 23:01:11 INFO  ReimbursementService:36 - Select all reimbursement with status Pending
+2020-09-07 23:01:11 INFO  ReimbursementService:81 - Select all reimbursement for user 1
+2020-09-07 23:01:11 INFO  ReimbursementService:76 - A new reimbursement was created by peneloce
+2020-09-07 23:01:11 INFO  ReimbursementService:86 - Select reimbursement with id 1
+2020-09-07 23:01:12 INFO  ReimbursementService:64 - Reimbursement created by tiffany was approved by tiffany
+2020-09-07 23:01:12 INFO  ReimbursementService:91 - Select reimbursement with user id 1 and status ALL
+2020-09-07 23:01:12 INFO  ReimbursementService:86 - Select reimbursement with id 1
+2020-09-07 23:01:12 INFO  ReimbursementService:51 - Reimbursement created by tiffany was denied by tiffany
+2020-09-07 23:01:41 INFO  LoginService:45 - eunice is logged in.
+2020-09-07 23:02:54 INFO  LoginService:47 - eunice is logged in.
+2020-09-07 23:02:54 INFO  ReimbursementService:36 - Select all reimbursement with status ALL
+2020-09-07 23:02:54 INFO  ReimbursementService:36 - Select all reimbursement with status Approved
+2020-09-07 23:02:54 INFO  ReimbursementService:36 - Select all reimbursement with status Denied
+2020-09-07 23:02:54 INFO  ReimbursementService:36 - Select all reimbursement with status Pending
+2020-09-07 23:02:55 INFO  ReimbursementService:81 - Select all reimbursement for user 1
+2020-09-07 23:02:55 INFO  ReimbursementService:76 - A new reimbursement was created by peneloce
+2020-09-07 23:02:55 INFO  ReimbursementService:86 - Select reimbursement with id 1
+2020-09-07 23:02:55 INFO  ReimbursementService:64 - Reimbursement created by tiffany was approved by tiffany
+2020-09-07 23:02:55 INFO  ReimbursementService:91 - Select reimbursement with user id 1 and status ALL
+2020-09-07 23:02:56 INFO  ReimbursementService:86 - Select reimbursement with id 1
+2020-09-07 23:02:56 INFO  ReimbursementService:51 - Reimbursement created by tiffany was denied by tiffany

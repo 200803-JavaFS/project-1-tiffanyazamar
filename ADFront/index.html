@@ -36,15 +36,12 @@
 					</div>
 				</div>
 			</div>
-
-
-
 			<h3 class="col-lg-12"></h3>
 
 		</div>
 
-		<div id="welcome-message" >
-				<span id="logout" style = "text-align: right;    float: right;"></span>
+		<div id="welcome-message">
+			<span id="logout" style="text-align: right; float: right;"></span>
 		</div>
 
 		<br /> <br />
@@ -84,6 +81,51 @@
 			</div>
 
 			<br /> <br />
+			<div id="new-user-button"  style="display: none;">
+				<button class="btn btn-success"
+					onClick="showAddNewUserButton()" style="float:right">New
+					User</button>
+			</div>
+			
+			<div class="card" id="new-user" style="display: none">
+				<h5 class="card-header">Add new user:</h5>
+				<div class="card-body">
+
+
+					<div class="row" id="formdiv">
+						<div class="col-4-sm">
+							<label class="label" for="new-role">Role: </label> <select
+								name="cars" id="new-role" class="form-control">
+								<option value="Employee">Employee</option>
+								<option value="Finance Manager">Finance Manager</option>
+							</select>
+						</div>
+						<div class="col-4-sm">
+							<label class="label" for="new-username">Username: </label> <input
+								type="text" class="form-control" id="new-username" />
+						</div>
+						<div class="col-4-sm">
+							<label class="label" for="new-password">Password: </label>
+							<input class="form-control" type = "password" id="new-password"/>
+						</div>
+						<div class="col-4-sm">
+							<label class="label" for="new-email">Email: </label> <input
+								type="text" class="form-control" id="new-email" />
+						</div>
+						<div class="col-4-sm">
+							<label class="label" for="new-firstName">First Name: </label> <input
+								type="text" class="form-control" id="new-firstName" />
+						</div>
+						<div class="col-4-sm">
+							<label class="label" for="new-lastName">Last Name: </label> <input
+								type="text" class="form-control" id="new-lastName" />
+						</div>
+					</div>
+					<button class="btn btn-success" onClick="addNewUser()">Add</button>
+
+				</div>
+			</div>
+			
 			<div>
 				<button class="btn btn-success" id="new-reimbursement-button"
 					onClick="showAddButton()" style="display: block">New
@@ -116,7 +158,7 @@
 							<textarea class="form-control" id="description"></textarea>
 						</div>
 					</div>
-						<button class="btn btn-success" onClick="AddFunc()">Add</button>
+					<button class="btn btn-success" onClick="AddFunc()">Add</button>
 
 				</div>
 			</div>

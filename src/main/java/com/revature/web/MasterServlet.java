@@ -13,12 +13,14 @@ import javax.servlet.http.HttpSession;
 
 import com.revature.controllers.LoginController;
 import com.revature.controllers.ReimbursementController;
+import com.revature.controllers.UserController;
 import com.revature.models.User;
 
 public class MasterServlet extends HttpServlet {
 
 	private static ReimbursementController reimbursementController = new ReimbursementController();
 	private static LoginController loginController = new LoginController();
+	private static UserController userController = new UserController();
 
 	public MasterServlet() {
 		super();
@@ -71,6 +73,9 @@ public class MasterServlet extends HttpServlet {
 			case "logout":
 				loginController.logout(req, res);
 				break;
+				
+			case "user":
+				userController.newUser(req, res);
 			}
 
 		} catch (NumberFormatException e) {

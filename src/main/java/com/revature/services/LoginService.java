@@ -42,8 +42,10 @@ public class LoginService {
 			String generatedPassword = sb.toString();
 
 			User user = userDAO.findByUsernameAndPassword(l.username.toLowerCase(), generatedPassword);
-			log.info(user.getUsername() + " is logged in.");
 
+			if(user!=null) {
+				log.info(user.getUsername() + " is logged in.");
+			}
 			return user;
 		} catch (NoSuchAlgorithmException e) {
 			log.error("Failed to hash password");
