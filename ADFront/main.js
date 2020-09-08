@@ -192,6 +192,9 @@ async function logout(){
 		    credentials: "include",
 		    // mode: "no-cors"
 		  });
+	  if(resp.status===200){
+		  location.reload();
+	  }
 }
 async function AddFunc() {
   let type = document.getElementById("type").value;

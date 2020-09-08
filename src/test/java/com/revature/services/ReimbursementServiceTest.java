@@ -2,12 +2,14 @@ package com.revature.services;
 
 import static org.junit.Assert.*;
 
+import java.util.Date;
 import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import com.revature.models.Reimbursement;
+import com.revature.models.ReimbursementDTO;
 
 public class ReimbursementServiceTest {
 
@@ -42,8 +44,23 @@ public class ReimbursementServiceTest {
 	}
 	@Test
 	public void testAddReimbursement() {
-		
-		reimbursementService.addReimbursement(reimbursementDTO);
-		assertNotNull(re1);
+		ReimbursementDTO reimbursementDTO = new ReimbursementDTO();
+		reimbursementDTO.amount = 100;
+		reimbursementDTO.authorId = 2;
+		reimbursementDTO.description = "TEST";
+		reimbursementDTO.submittedDate = new Date();
+		reimbursementDTO.type = "Lodging";
+		boolean result = reimbursementService.addReimbursement(reimbursementDTO);
+		assertTrue(result);
+	}
+	@Test
+	public void testApproveReimbursement() {
+		boolean result = reimbursementService.approvedReimbursement(1, 1);
+		assertTrue(result);
+	}
+	@Test
+	public void testDeniedReimbursement() {
+		boolean result = reimbursementService.deniedReimbursement(1, 1);
+		assertTrue(result);
 	}
 }

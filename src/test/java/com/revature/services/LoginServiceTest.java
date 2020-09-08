@@ -2,6 +2,10 @@ package com.revature.services;
 
 import static org.junit.Assert.*;
 
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -30,5 +34,4 @@ public class LoginServiceTest {
 		User user2 = loginService.login(l);
 		assertNull(user2);
 	}
-
 }

@@ -18,7 +18,6 @@ import com.revature.services.LoginService;
 
 public class LoginController {
 	
-	private static Logger log = LogManager.getLogger(LoginController.class);
 	private static LoginService loginService = new LoginService();
 	private static ObjectMapper objectMapper = new ObjectMapper();
 
@@ -26,7 +25,6 @@ public class LoginController {
 	public void login(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		// this is how a login should generally be handled. Sending credentials in the
 		// body of a POST request.
-		log.error("test");
 		BufferedReader reader = req.getReader();
 
 		StringBuilder sb = new StringBuilder();
@@ -66,10 +64,10 @@ public class LoginController {
 		HttpSession ses = req.getSession(false);
 
 		if (ses != null) {
-			LoginDTO l = (LoginDTO) ses.getAttribute("user");
+			User l = (User) ses.getAttribute("user");
 			ses.invalidate();
 			res.setStatus(200);
-			res.getWriter().println(l.username + " has logged out successfully");
+			res.getWriter().println(l.getUsername() + " has logged out successfully");
 		} else {
 			res.setStatus(400);
 			res.getWriter().println("You must be logged in to logout!");
